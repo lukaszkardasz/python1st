@@ -1,0 +1,10 @@
+wynik = 0
+licznik = 0
+while (licznik < 3):
+    x = int(input("Podaj liczbę: "))
+    if (x > 0):
+        wynik += x
+        licznik += 1
+    else:
+        continue
+print(f"Suma liczb to: {str(wynik)}")

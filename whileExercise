@@ -1,0 +1,8 @@
+#while exercise
+
+liczba = 100
+limit = 0
+while (liczba >= limit):
+    print(liczba)
+    liczba -= 1
+print("Koniec")
