@@ -1,10 +1,23 @@
+# Initialize the result variable to store the sum of numbers
 wynik = 0
+
+# Initialize the counter variable to count the number of valid inputs
 licznik = 0
+
+# Loop until we have 3 valid inputs
 while (licznik < 3):
+    # Prompt the user to input a number
     x = int(input("Podaj liczbę: "))
-    if (x > 0):
+    
+    # Check if the input number is positive and even
+    if (x > 0 and x % 2 == 0):
+        # Add the valid number to the result
         wynik += x
+        # Increment the counter for valid inputs
         licznik += 1
     else:
+        # If the number is not valid, continue to the next iteration
         continue
+
+# Print the sum of the valid numbers
 print(f"Suma liczb to: {str(wynik)}")
